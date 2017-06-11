@@ -1,0 +1,55 @@
+Syntactically Awesome Stylesheets
+
+http://slides.com/devleague/sass
+
+SCSS - Sassy CSS
+
+SCSS uses variables
+
+you can nest elements inside of elements
+
+partials and imports:
+    you can SCSS files for specific pages or parts of a site
+    makes it cleaner and easier to keep track of 
+    
+    
+    MIXINS - like a little function 
+    
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.container {
+  @include border-radius(10px); // including mixin, passes 10px
+}
+
+.footer {
+  @include border-radius(20px); // including mixin, passes 20px
+
+
+
+@EXTENDS
+.message {
+  border: 1px solid red;    
+  padding: 5px;
+  color: blue;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+
+
+
+
+

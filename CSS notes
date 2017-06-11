@@ -1,0 +1,39 @@
+
+
+works from top to bottom inherits
+
+!important tag -- takes precedence over everything else
+
+:psuedo selectors
+    work to get properties of a class
+    a:hover -- when you hover over a thing
+    
+    ul:first-child -- first element
+    
+vendor prefixes--
+    each browser does it own thing to take in a style
+    
+
+RESPONSIVE DESIGN - working with multi screen widths
+
+media query - looks for size of screen, tailored to range of output devices w/o changing content
+    **e.g. <link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" />
+
+
+
+body{
+    background-color: pink;
+   }
+   
+@media screen and (min-width: 300px;){
+    body{
+        background-color: green;
+    }
+ }
+ 
+ 
+@media screen and (min-width: 600px;){
+    body{
+        background-color: blue;
+    }
+ }
