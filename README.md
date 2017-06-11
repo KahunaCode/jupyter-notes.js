@@ -1,1 +1,1 @@
-jupyter notebook files from class
+jupyter notebooks
