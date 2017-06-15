@@ -1,0 +1,48 @@
+Chai docs == http://chaijs.com/api/bdd/
+
+
+
+Mocha - runs test and shows output
+
+two parts two a test:
+    describe and it
+    describe is a section
+    it is a bullet point
+    
+hooks 
+    allows you to modify state before, after, and beforeEach/afterEach function
+    
+"watch"
+    mocha --watch 
+        reruns when files are changed
+        
+        
+Chai - assertion library "is this really equal to this"
+    "should"
+    "expect"
+        "expect" works on values that may be undefined unlike the "should" property
+        expect() allows us to pass in a string to help tests easier to understand at a glance
+        
+Language Chains - Chai allows you to chain words together
+    expect(1).to.equal(1)
+    expect(1).equal(1)
+    
+Equality with Objects and Arrays
+
+{name: "Mocha"} === { name: "Mocha"}
+>>false
+[1,2,3] === [1,2,3]
+>>false
+
+deep.equal allows you to look inside the objects and arrays
+var myObject = { name: "mocha"}
+expect(myObject).to.deep.equal({ name: "Mocha"});
+
+Test Driven Development - unit tests to check functionality of modules and classes
+    does the logic work, do the functions work?
+
+Behavior Driven Development - does it act how you expect it to work? 
+    does the button click take you to the right page
+    
+
+
