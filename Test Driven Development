@@ -58,3 +58,5 @@ Starting a new NPM project in a directory
 
 open package.json and in the file:
     "scripts":{ "test":"mocha -R spec --bail --watch" }
+
+check out the example tests and code here- https://github.com/KahunaCode/mocha-chai-example
