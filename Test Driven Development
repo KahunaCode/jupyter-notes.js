@@ -1,6 +1,6 @@
 Chai docs == http://chaijs.com/api/bdd/
 
-
+http://chaijs.com/api/bdd/
 
 Mocha - runs test and shows output
 
@@ -46,3 +46,15 @@ Behavior Driven Development - does it act how you expect it to work?
     
 
 
+
+
+Starting a new NPM project in a directory
+
+"npm init"  ---- initialize new package.json 
+"npm install --save-dev mocha chai"  install as dev dependencies, not as live deployment
+    --save <--- this would be for normal deployed dependencies
+"git init" --- start a git repo to track files
+"touch .gitignore" --- setup a git ignore file, then add node_modules to it
+
+open package.json and in the file:
+    "scripts":{ "test":"mocha -R spec --bail --watch" }
