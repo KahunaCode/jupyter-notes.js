@@ -60,3 +60,38 @@ open package.json and in the file:
     "scripts":{ "test":"mocha -R spec --bail --watch" }
 
 check out the example tests and code here- https://github.com/KahunaCode/mocha-chai-example
+
+
+
+
+How to make tests run in the browser ===============
+https://mochajs.org/#running-mocha-in-the-browser
+
+in script tag:
+add a "mocha" div...
+source the script to test...
+import mocha and chai...
+then mocha.setup('bdd')...
+then import the spec ...
+
+    <body>
+      <div id="mocha"></div>
+
+      <script src="human.js"></script>
+
+      <script src="node_modules/mocha/mocha.js"></script>
+      <script src="node_modules/chai/chai.js"></script>
+
+      <script>
+        mocha.setup('bdd');
+      </script>
+      <script src="test/human.spec.js"></script>
+
+      <script>
+        mocha.run();
+      </script>
+    </body
+
+    
+    
+    
