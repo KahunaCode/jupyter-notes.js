@@ -1,0 +1,7 @@
+D3 mapping - safari
+react native - udemy
+leaflet
+Apply Bind Call exercise
+https://github.com/KahunaCode/Springy-Findeon
+https://github.com/xgrommx/awesome-redux
+linux from scratch: project to learn linux
